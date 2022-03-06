@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="askPlayersForName">Enter the names of the players</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+    <string name="enter">Enter</string>
+    <string name="playerX">X</string>
+    <string name="playerO">O</string>
+    <string name="player">Player :</string>
+    <string name="result">Result:</string>
+    <string name="reset">Reset</string>
+    <string name="playerChooseAsk">Player 1 start game as:</string>
+    <string-array name="playerChoose">
+        <item>O</item>
+        <item>X</item>
+    </string-array>
+</resources>
