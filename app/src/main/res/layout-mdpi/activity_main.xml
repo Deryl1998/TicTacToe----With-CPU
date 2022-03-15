@@ -8,43 +8,43 @@
 
     <TextView
         android:id="@+id/askPlayersForName"
-        android:layout_width="350dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/askPlayersForName"
-        android:textSize="52sp"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.057" />
+        app:layout_constraintVertical_bias="0.067" />
 
     <TextView
         android:id="@+id/askPlayer"
-        android:layout_width="350dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/askPlayer"
-        android:textSize="42sp"
+        android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintVertical_bias="0.297" />
 
     <Spinner
         android:id="@+id/spinner1"
-        android:layout_width="350dp"
-        android:layout_height="100dp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408"
+        app:layout_constraintVertical_bias="0.439"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
@@ -53,12 +53,11 @@
         android:layout_height="100dp"
         android:onClick="startGame"
         android:text="@string/enter"
-        android:textSize="32sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintVertical_bias="0.896" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

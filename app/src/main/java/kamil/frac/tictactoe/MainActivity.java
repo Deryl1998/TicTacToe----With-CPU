@@ -10,15 +10,19 @@ import android.widget.Spinner;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.Serializable;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements Serializable {
 
     public class Player implements Serializable  {
         public String name;
         public String sign;
-        Player(String name,String sign){
+        public boolean clickedButton = false;
+        public boolean isCPU;
+        Player(String name,String sign ,boolean isCPU){
             this.name = name;
-            this.sign=sign;
+            this.sign = sign;
+            this.isCPU = isCPU;
         }
     }
 
@@ -33,15 +37,20 @@ public class MainActivity extends AppCompatActivity implements Serializable {
         spinner1.setAdapter(staticAdapter);
 
     }
-    private static final String TAG = "MyActivity";
+
     public void startGame(View view) {
-        String player2Sign,player1Sign = ((Spinner) findViewById(R.id.spinner1)).getSelectedItem().toString();
-        String player1Name = ((EditText) findViewById(R.id.playerInput1)).getText().toString();
-        String player2Name = ((EditText) findViewById(R.id.playerInput2)).getText().toString();
-        if(player1Sign.equals("O")) player2Sign = "X";
-        else player2Sign = "O";
-        Player player1 = new Player(player1Name,player1Sign);
-        Player player2 = new Player(player2Name,player2Sign);
+        Player player1 , player2;
+
+        Random rand = new Random();
+        int player2Sign,player1Sign = rand.nextInt(2);
+        player2Sign =  player1Sign == 1? 0:1;
+        String select = ((Spinner) findViewById(R.id.spinner1)).getSelectedItem().toString();
+        String[] sing = new String[]{"O","X"};
+        if(select.equals("CPU")) player2 = new Player("CPU",sing[player2Sign],true);
+        else player2 = new Player("Player_2",sing[player2Sign],false);
+
+        player1 = new Player("Player_1",sing[player1Sign],false);
+
         Intent myIntent = new Intent(this , GameActivity.class);
         Bundle extras = new Bundle();
         extras.putSerializable("player1", player1);
