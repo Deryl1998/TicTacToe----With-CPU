@@ -3,16 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".GameActivity">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="160dp"
-        android:layout_height="100dp"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
         android:gravity="center"
         android:text="@string/player"
-        android:textSize="40sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.082"
@@ -22,54 +21,52 @@
 
     <TextView
         android:id="@+id/currentPlayer"
-        android:layout_width="160dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
         android:gravity="center"
-        android:textSize="40sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintHorizontal_bias="0.905"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintVertical_bias="0.035" />
 
     <TextView
         android:id="@+id/gameResult"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
         android:gravity="center"
-        android:textSize="40sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintVertical_bias="0.186" />
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="380dp"
-        android:layout_height="380dp"
+        android:layout_width="260dp"
+        android:layout_height="245dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.658"
+        app:layout_constraintVertical_bias="0.572"
         tools:context=".MainActivity">
         <TableRow>
 
             <Button
                 android:id="@+id/btn1"
                 style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_marginStart="5dp"
                 android:backgroundTint="@color/white"
                 android:onClick="playerClick"
                 android:textColor="@color/black"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 app:strokeColor="@color/black"
                 app:strokeWidth="2dp"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -77,13 +74,13 @@
             <Button
                 android:id="@+id/btn2"
                 style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_marginStart="5dp"
                 android:backgroundTint="@color/white"
                 android:onClick="playerClick"
                 android:textColor="@color/black"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 app:strokeColor="@color/black"
                 app:strokeWidth="2dp"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -91,13 +88,13 @@
             <Button
                 android:id="@+id/btn3"
                 style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_marginStart="5dp"
                 android:backgroundTint="@color/white"
                 android:onClick="playerClick"
                 android:textColor="@color/black"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 app:strokeColor="@color/black"
                 app:strokeWidth="2dp"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -108,13 +105,13 @@
             <Button
                 android:id="@+id/btn4"
                 style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_marginStart="5dp"
                 android:backgroundTint="@color/white"
                 android:onClick="playerClick"
                 android:textColor="@color/black"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 app:strokeColor="@color/black"
                 app:strokeWidth="2dp"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -122,13 +119,13 @@
             <Button
                 android:id="@+id/btn5"
                 style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_marginStart="5dp"
                 android:backgroundTint="@color/white"
                 android:onClick="playerClick"
                 android:textColor="@color/black"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 app:strokeColor="@color/black"
                 app:strokeWidth="2dp"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -136,13 +133,13 @@
             <Button
                 android:id="@+id/btn6"
                 style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_marginStart="5dp"
                 android:backgroundTint="@color/white"
                 android:onClick="playerClick"
                 android:textColor="@color/black"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 app:strokeColor="@color/black"
                 app:strokeWidth="2dp"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -153,13 +150,13 @@
             <Button
                 android:id="@+id/btn7"
                 style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_marginStart="5dp"
                 android:backgroundTint="@color/white"
                 android:onClick="playerClick"
                 android:textColor="@color/black"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 app:strokeColor="@color/black"
                 app:strokeWidth="2dp"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -167,13 +164,13 @@
             <Button
                 android:id="@+id/btn8"
                 style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_marginStart="5dp"
                 android:backgroundTint="@color/white"
                 android:onClick="playerClick"
                 android:textColor="@color/black"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 app:strokeColor="@color/black"
                 app:strokeWidth="2dp"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -181,13 +178,13 @@
             <Button
                 android:id="@+id/btn9"
                 style="@style/Widget.AppCompat.ButtonBar"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_marginStart="5dp"
                 android:backgroundTint="@color/white"
                 android:onClick="playerClick"
                 android:textColor="@color/black"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 app:strokeColor="@color/black"
                 app:strokeWidth="2dp"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -197,34 +194,14 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="200dp"
-        android:layout_height="80dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:onClick="resetButton"
         android:text="@string/reset"
-        android:textSize="32sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.961" />
+        app:layout_constraintVertical_bias="0.946" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
